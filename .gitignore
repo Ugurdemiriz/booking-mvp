@@ -1,0 +1,29 @@
+# Node / NestJS
+server/node_modules/
+server/dist/
+server/.env
+server/.DS_Store
+
+# Flutter
+.mobile_icons/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+mobile/.dart_tool/
+mobile/.idea/
+mobile/.vscode/
+mobile/build/
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/ios/Flutter/App.framework
+mobile/ios/ServiceDefinitions.json
+mobile/android/.gradle/
+mobile/android/app/*.keystore
+mobile/android/local.properties
+
+# OS
+.DS_Store
+Thumbs.db
