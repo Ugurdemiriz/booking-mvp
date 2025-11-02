@@ -1,29 +1,38 @@
-# Node / NestJS
-server/node_modules/
-server/dist/
-server/.env
-server/.DS_Store
+# Environment
+.env
+.env.local
+.env.*.local
 
-# Flutter
-.mobile_icons/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-pubspec.lock
+# Dependencies
+node_modules/
 mobile/.dart_tool/
-mobile/.idea/
-mobile/.vscode/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/pubspec.lock
+
+# Build outputs
 mobile/build/
-mobile/ios/Pods/
-mobile/ios/.symlinks/
-mobile/ios/Flutter/Flutter.framework
-mobile/ios/Flutter/Flutter.podspec
-mobile/ios/Flutter/App.framework
-mobile/ios/ServiceDefinitions.json
-mobile/android/.gradle/
-mobile/android/app/*.keystore
-mobile/android/local.properties
+server/dist/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Secrets and keys
+*.jks
+*.keystore
+*.p12
+key.properties
+mobile/android/key.properties
+
+# Docker
+*.pid

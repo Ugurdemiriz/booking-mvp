@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[Step 16] Setting up Play App Signing..."
+
+echo "[Step 16.1] Play App Signing Overview"
+echo ""
+echo "Play App Signing allows Google to manage and protect your app's signing key."
+echo "You only need to upload a signed bundle, and Google will handle the rest."
+echo ""
+
+echo "[Step 16.2] Steps to enable Play App Signing:"
+echo ""
+echo "1. Go to Google Play Console: https://play.google.com/console"
+echo "2. Select your app"
+echo "3. Navigate to: Release → Setup → App signing"
+echo "4. Choose one of these options:"
+echo ""
+echo "   Option A: Use Google Play App Signing (Recommended)"
+echo "   - Let Google manage your signing key"
+echo "   - Upload your AAB (signed with upload key)"
+echo "   - Google will use the app signing key for distribution"
+echo ""
+echo "   Option B: Use your own app signing key"
+echo "   - You manage the signing key"
+echo "   - More control but more responsibility"
+echo ""
+
+echo "[Step 16.3] To get certificate fingerprint for assetlinks.json:"
+echo ""
+echo "1. After uploading your first AAB, go to: Release → Setup → App signing"
+echo "2. Find the 'App signing key certificate' section"
+echo "3. Copy the SHA-256 certificate fingerprint"
+echo "4. Update your assetlinks.json file with this fingerprint"
+echo "5. Verify domain association in Play Console"
+echo ""
+
+echo "[Step 16.4] Benefits of Play App Signing:"
+echo ""
+echo "  ✓ Google manages and protects your signing key"
+echo "  ✓ Can recover from lost upload key"
+echo "  ✓ Smaller app size (optimized by Google)"
+echo "  ✓ Automatic key rotation capability"
+echo ""
+
+echo "[Step 16] Play App Signing setup guide complete."
+echo ""
+echo "Next steps:"
+echo "  1. Enable Play App Signing in Play Console"
+echo "  2. Upload your first AAB"
+echo "  3. Get certificate fingerprint from Play Console"
+echo "  4. Update assetlinks.json for App Links (if needed)"
+
